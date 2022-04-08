@@ -1,8 +1,28 @@
-//   let nuevoNodo = document.createElement("div");
+let nuevoNodo = document.createElement("div");
+// let nuevoNodo = document.createElement("p");
+// console.log('===============nuevoNodo=====================');
+//   console.log(nuevoNodo);
+//   console.log('====================================');
 
-//   nuevoNodo.textContent= ' <p> mi nodo creado con <strong>etiquetas</strong></p>';
+  const datoCualquier = 'hola esto es un dato';
+ nuevoNodo.setAttribute( "class", "fondo")
+ nuevoNodo.setAttribute( "id", "miUnicoParrafo")
+//  nuevoNodo.textContent= '<p> mi nodo creado con <strong>etiquetas</strong></p>';
+ nuevoNodo.innerHTML= '<p> mi nodo creado con <strong>etiquetas</strong> otro cosa </p> coloco lo que quiero mostrar';
+//  nuevoNodo.innerHTML= `<p> mi nodo creado con <strong>etiquetas</strong></p> ${datoCualquier} `;
 
-//   document.body.appendChild(nuevoNodo);
+
+document.body.appendChild(nuevoNodo);
+
+
+ const modificandoNodo = document.getElementById("miUnicoParrafo");
+//  console.log('====================================');
+//  console.log(modificandoNodo.innerHTML);
+//  console.log('====================================');
+setTimeout(() => {
+    modificandoNodo.innerHTML = '<div> <p> <u> <li>etiqueta modifcada </li> </u> </p> </div>'
+    
+}, 3000);
 
 //   // nuevoNodo.innerHTML= ' mi nodo creado solo con texto como contenido';
 
@@ -18,27 +38,27 @@
 
 
 
-/** 
+/**
  * controlando la insercion del nodo
  */
 
-  let nuevoNodo = document.createElement("div");
+//   let nuevoNodo = document.createElement("div");
 
-  nuevoNodo.innerHTML= ' <p> mi nodo creado con <strong>etiquetas</strong> con control</p>';
+//   nuevoNodo.innerHTML= ' <p> mi nodo creado con <strong>etiquetas</strong> con control</p>';
 
-  const nodoPadre = document.getElementById("nodoHijo").parentNode;
+//   const nodoPadre = document.getElementById("nodoHijo").parentNode;
 
-  console.log('====================================');
-  console.log(nodoPadre);
-  console.log('====================================');
-  const nodoHijo = document.getElementById("nodoHijo"); 
+//   console.log('====================================');
+//   console.log(nodoPadre);
+//   console.log('====================================');
+//   const nodoHijo = document.getElementById("nodoHijo");
 
-  console.log('====================================');
-  console.log(nodoHijo);
-  console.log('====================================');
+//   console.log('====================================');
+//   console.log(nodoHijo);
+//   console.log('====================================');
 
 
-  nodoPadre.insertBefore(nuevoNodo, nodoHijo);
+//   nodoPadre.insertBefore(nuevoNodo, nodoHijo);
 
 
 
